@@ -30,3 +30,6 @@ https://devops.com/splunk-elk-stack-side-side-comparison/
 ###
 JDK - http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html  
 Vagrant - http://www.vagrantbox.es/  
+
+###
+AWS - https://aws.amazon.com/ko/ec2/pricing/?p=ps  
