@@ -5,6 +5,14 @@ https://github.com/bmatzelle/gow
 http://www.rejetto.com/hfs/  
 https://wiki.apache.org/hadoop/PoweredBy  
 
+### 기술블로그
+
+https://github.com/kakao/kakao.github.io  
+http://d2.naver.com/home  
+https://brunch.co.kr/@minhokimorlion/21  
+http://tech.kakao.com/2016/07/07/tech-blog-story/  
+
+
 ### 머신러닝, 딥러닝 참고
 https://github.com/babelPish/babelbot  
   
