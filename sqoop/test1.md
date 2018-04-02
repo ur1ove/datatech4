@@ -126,3 +126,21 @@ drwxr-xr-x.  2 vagrant vagrant     6 Apr  2 06:33 userlogs
 -rw-rw-r--.  1 vagrant vagrant  1508 Apr  2 01:41 yarn-vagrant-nodemanager-dn02.out.1
 [vagrant@dn02 logs]$ 
 ~~~
+[vagrant@nn01 ~]$ stop-all.sh
+~~~
+This script is Deprecated. Instead use stop-dfs.sh and stop-yarn.sh
+Stopping namenodes on [nn01]
+nn01: stopping namenode
+dn02: no datanode to stop
+dn01: no datanode to stop
+Stopping secondary namenodes [nn01]
+nn01: stopping secondarynamenode
+stopping yarn daemons
+stopping resourcemanager
+dn02: stopping nodemanager
+dn01: stopping nodemanager
+dn02: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+dn01: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+no proxyserver to stop
+[vagrant@nn01 ~]$ 
+~~~
