@@ -81,5 +81,13 @@ dn02: starting nodemanager, logging to /opt/hadoop/2.8.3/logs/yarn-vagrant-nodem
 3272 ResourceManager
 3119 SecondaryNameNode
 3535 Jps
+[vagrant@nn01 ~]$ ssh dn01
+[vagrant@dn01 ~]$ jps
+3029 Jps
+2872 NodeManager
+[vagrant@dn01 ~]$ exit
+logout
+Connection to dn01 closed.
 [vagrant@nn01 ~]$ 
+
 ~~~
