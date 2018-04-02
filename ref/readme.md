@@ -31,6 +31,7 @@ https://devops.com/splunk-elk-stack-side-side-comparison/
 JDK - http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html  
 Vagrant - http://www.vagrantbox.es/  
 참고 - https://medium.com/@reiot/windows-10-%EC%97%90%EC%84%9C-vagrant-virtualbox-%EB%A1%9C-cent-os-7-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-d146404df203
+Hadoop - https://github.com/karthikj1/Hadoop-2.7.1-Windows-64-binaries/releases  
 
 
 ###
