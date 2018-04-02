@@ -144,3 +144,14 @@ dn01: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
 no proxyserver to stop
 [vagrant@nn01 ~]$ 
 ~~~
+[vagrant@nn01 ~]$ vi /opt/hadoop/current/etc/hadoop/hdfs-site.xml
+~~~
+        <property>
+                <name>dfs.namenode.name.dir</name>
+                <value>file:/var/hadoop/hadoop-namenode</value>
+        </property>
+        <property>
+                <name>dfs.datanode.data.dir</name>
+                <value>file:/var/hadoop/hadoop-datanode</value>
+        </property>
+~~~
