@@ -101,3 +101,37 @@ Storage Desc Params:
 Time taken: 0.245 seconds, Fetched: 40 row(s)
 hive (hivedemo)> 
 ~~~
+~~~
+hive (hivedemo)> EXPLAIN SELECT * FROM page_views_ext WHERE userid = 13;
+OK
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+        TableScan
+          alias: page_views_ext
+          Statistics: Num rows: 214 Data size: 151325 Basic stats: COMPLETE Column stats: NONE
+          Filter Operator
+            predicate: (userid = 13) (type: boolean)
+            Statistics: Num rows: 107 Data size: 75662 Basic stats: COMPLETE Column stats: NONE
+            Select Operator
+              expressions: logtime (type: string), 13 (type: int), ip (type: string), page (type: string), ref (type: string), os (type: string), os_ver (type: string), agent (type: string)
+              outputColumnNames: _col0, _col1, _col2, _col3, _col4, _col5, _col6, _col7
+              Statistics: Num rows: 107 Data size: 75662 Basic stats: COMPLETE Column stats: NONE
+              ListSink
+
+Time taken: 0.572 seconds, Fetched: 20 row(s)
+hive (hivedemo)> drop table page_views_ext;
+OK
+Time taken: 0.804 seconds
+hive (hivedemo)> show tables;
+OK
+orders
+orders_no_partition
+Time taken: 0.076 seconds, Fetched: 2 row(s)
+hive (hivedemo)> 
+~~~
