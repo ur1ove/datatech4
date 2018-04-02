@@ -41,5 +41,7 @@ Time taken: 0.027 seconds, Fetched: 2 row(s)
 hive (hivedemo)> select * from page_views_ext;
 OK
 Time taken: 0.108 seconds
-hive (hivedemo)> 
+hive (hivedemo)> exit;
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
 ~~~
