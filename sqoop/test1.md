@@ -1,4 +1,5 @@
 [vagrant@dn02 ~]$ mysql -u root -p
+~~~
 Enter password: 
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
 Your MariaDB connection id is 3
@@ -15,6 +16,36 @@ Query OK, 1 row affected (0.00 sec)
 
 MariaDB [(none)]> use sqoopdemo;
 Database changed
+MariaDB [sqoopdemo]> CREATE TABLE departments (
+    ->   department_id  INT(11) unsigned NOT NULL,
+    ->   department_name VARCHAR(32) NOT NULL,
+    ->   PRIMARY KEY (department_id)
+    -> );
+Query OK, 0 rows affected (0.01 sec)
+
+MariaDB [sqoopdemo]> insert into departments (department_id, department_name) VALUES
+    -> (1, 'Fitness'),
+    -> (2, 'Footwear'),
+    -> (3, 'Apparel'),
+    -> (4, 'Golf'),
+    -> (5, 'Outdoors'),
+    -> (6, 'Fan Shop');
+Query OK, 6 rows affected (0.00 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+MariaDB [sqoopdemo]> select * from departments;
++---------------+-----------------+
+| department_id | department_name |
++---------------+-----------------+
+|             1 | Fitness         |
+|             2 | Footwear        |
+|             3 | Apparel         |
+|             4 | Golf            |
+|             5 | Outdoors        |
+|             6 | Fan Shop        |
++---------------+-----------------+
+6 rows in set (0.00 sec)
+
 MariaDB [sqoopdemo]> exit
 Bye
 [vagrant@dn02 ~]$ sqoop-version
