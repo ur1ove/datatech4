@@ -146,6 +146,7 @@ no proxyserver to stop
 ~~~
 [vagrant@nn01 ~]$ vi /opt/hadoop/current/etc/hadoop/hdfs-site.xml
 ~~~
+......
         <property>
                 <name>dfs.namenode.name.dir</name>
                 <value>file:/var/hadoop/hadoop-namenode</value>
@@ -154,4 +155,33 @@ no proxyserver to stop
                 <name>dfs.datanode.data.dir</name>
                 <value>file:/var/hadoop/hadoop-datanode</value>
         </property>
+......
+~~~
+[vagrant@nn01 ~]$ vi /opt/hadoop/current/etc/hadoop/hdfs-site.xml  
+[vagrant@nn01 ~]$ scp /opt/hadoop/current/etc/hadoop/hdfs-site.xml vagrant@dn02:/opt/hadoop/current/etc/hadoop/hdfs-site.xml  
+hdfs-site.xml                                        100% 1577     2.3MB/s   00:00    
+[vagrant@nn01 ~]$ scp /opt/hadoop/current/etc/hadoop/hdfs-site.xml vagrant@dn01:/opt/hadoop/current/etc/hadoop/hdfs-site.xml   
+hdfs-site.xml                                        100% 1577     2.1MB/s   00:00    
+[vagrant@nn01 ~]$ 
+
+C:\Users\user\vagrant\hadoop>vagrant halt
+~~~
+==> dn02: Attempting graceful shutdown of VM...
+==> dn01: Attempting graceful shutdown of VM...
+==> nn01: Attempting graceful shutdown of VM...
+~~~
+C:\Users\user\vagrant\hadoop>vagrant snapshot push
+~~~
+==> nn01: Snapshotting the machine as 'push_1522651496_7937'...
+==> nn01: Snapshot saved! You can restore the snapshot at any time by
+==> nn01: using `vagrant snapshot restore`. You can delete it using
+==> nn01: `vagrant snapshot delete`.
+==> dn01: Snapshotting the machine as 'push_1522651498_6704'...
+==> dn01: Snapshot saved! You can restore the snapshot at any time by
+==> dn01: using `vagrant snapshot restore`. You can delete it using
+==> dn01: `vagrant snapshot delete`.
+==> dn02: Snapshotting the machine as 'push_1522651498_6495'...
+==> dn02: Snapshot saved! You can restore the snapshot at any time by
+==> dn02: using `vagrant snapshot restore`. You can delete it using
+==> dn02: `vagrant snapshot delete`.
 ~~~
