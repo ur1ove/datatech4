@@ -25,3 +25,7 @@ http://alborz-geramifard.com/workshops/nips17-Conversational-AI/Slides/Conversat
 
 ### 다른 소프트웨어
 https://conf.splunk.com/files/2017/slides/analytics-through-the-devops-lifecycle.pdf  
+https://devops.com/splunk-elk-stack-side-side-comparison/  
+
+###
+JDK - http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html  
