@@ -22,3 +22,6 @@ http://demo.allennlp.org/machine-comprehension
 http://125.132.250.244:8001/mrc/  
 https://github.com/kevinkwl/AoAReader  
 http://alborz-geramifard.com/workshops/nips17-Conversational-AI/Slides/Conversational%20AI%20Workshop-NIPS2017-smart%20reply%20and%20implicit%20semantics.pdf  
+
+### 다른 소프트웨어
+https://conf.splunk.com/files/2017/slides/analytics-through-the-devops-lifecycle.pdf  
