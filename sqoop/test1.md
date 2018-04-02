@@ -93,20 +93,26 @@ Connection to dn01 closed.
 ~~~
 [vagrant@dn02 ~]$ cd /opt/hadoop/  
 [vagrant@dn02 hadoop]$ ls  
+~~~
 2.8.3  current
 ~~~
 [vagrant@dn02 hadoop]$ ls -al
+~~~
 total 0
 drwxr-xr-x.  3 vagrant root  34 Apr  2 01:19 .
 drwxr-xr-x.  8 root    root  80 Apr  2 01:25 ..
 drwxr-xr-x. 10 vagrant root 161 Apr  2 01:38 2.8.3
 lrwxrwxrwx.  1 vagrant root  17 Apr  2 01:19 current -> /opt/hadoop/2.8.3
-[vagrant@dn02 hadoop]$ cd current/
-[vagrant@dn02 current]$ ls
+~~~
+[vagrant@dn02 hadoop]$ cd current/  
+[vagrant@dn02 current]$ ls  
+~~~
 bin  include  libexec      logs        README.txt  share
 etc  lib      LICENSE.txt  NOTICE.txt  sbin
-[vagrant@dn02 current]$ cd logs
-[vagrant@dn02 logs]$ ls -al
+~~~
+[vagrant@dn02 current]$ cd logs  
+[vagrant@dn02 logs]$ ls -al  
+~~~
 total 124
 drwxrwxr-x.  3 vagrant vagrant  4096 Apr  2 06:31 .
 drwxr-xr-x. 10 vagrant root      161 Apr  2 01:38 ..
