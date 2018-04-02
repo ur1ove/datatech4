@@ -44,3 +44,11 @@ Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.p
 WARNING: Hive CLI is deprecated and migration to Beeline is recommended.
 hive> 
 ~~~
+~~~
+hive> set hive.cli.print.current.db=true  
+    > ;  
+hive (default)> use hivedemo;
+OK
+Time taken: 0.399 seconds
+hive (hivedemo)> 
+~~~
