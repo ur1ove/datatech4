@@ -28,3 +28,18 @@ hive (hivedemo)> select * from page_views_ext;
 Time taken: 0.074 seconds, Fetched: 2000 row(s)
 hive (hivedemo)> 
 ~~~
+~~~
+hive (hivedemo)> ALTER TABLE page_views_ext DROP PARTITION (y='2016', m='06', d='13');
+Dropped the partition y=2016/m=06/d=13
+OK
+Time taken: 0.348 seconds
+hive (hivedemo)> show tables;
+OK
+orders_no_partition
+page_views_ext
+Time taken: 0.027 seconds, Fetched: 2 row(s)
+hive (hivedemo)> select * from page_views_ext;
+OK
+Time taken: 0.108 seconds
+hive (hivedemo)> 
+~~~
