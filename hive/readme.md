@@ -33,4 +33,14 @@ drwxr-xr-x 3 cloudera cloudera    4096 Apr  1 21:02 ..
 ~~~
 [cloudera@quickstart Log Files]$ hdfs dfs -mkdir -p /user/cloudera/logs/pv_ext/2012/06/13/log/data   
 [cloudera@quickstart Log Files]$ hdfs dfs -put log_2012613_161117.log logs/pv_ext/2012/06/13/log/data  
-[cloudera@quickstart Log Files]$  
+[cloudera@quickstart Log Files]$ hdfs dfs -ls logs/pv_ext/2012/06/13/log/data  
+~~~
+Found 1 items
+-rw-r--r--   1 cloudera cloudera     151325 2018-04-01 21:08 logs/pv_ext/2012/06/13/log/data/log_2012613_161117.log
+~~~
+[cloudera@quickstart Log Files]$ hive
+~~~
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+WARNING: Hive CLI is deprecated and migration to Beeline is recommended.
+hive> 
+~~~
