@@ -185,3 +185,112 @@ C:\Users\user\vagrant\hadoop>vagrant snapshot push
 ==> dn02: using `vagrant snapshot restore`. You can delete it using
 ==> dn02: `vagrant snapshot delete`.
 ~~~
+C:\Users\user\vagrant\hadoop>vagrant up dn01 dn02 nn01
+~~~
+Bringing machine 'dn01' up with 'virtualbox' provider...
+Bringing machine 'dn02' up with 'virtualbox' provider...
+Bringing machine 'nn01' up with 'virtualbox' provider...
+==> dn01: Clearing any previously set forwarded ports...
+==> dn01: Clearing any previously set network interfaces...
+==> dn01: Preparing network interfaces based on configuration...
+    dn01: Adapter 1: nat
+    dn01: Adapter 2: hostonly
+==> dn01: Forwarding ports...
+    dn01: 22 (guest) => 2222 (host) (adapter 1)
+==> dn01: Running 'pre-boot' VM customizations...
+==> dn01: Booting VM...
+==> dn01: Waiting for machine to boot. This may take a few minutes...
+    dn01: SSH address: 127.0.0.1:2222
+    dn01: SSH username: vagrant
+    dn01: SSH auth method: private key
+==> dn01: Machine booted and ready!
+==> dn01: Checking for guest additions in VM...
+    dn01: No guest additions were detected on the base box for this VM! Guest
+    dn01: additions are required for forwarded ports, shared folders, host only
+    dn01: networking, and more. If SSH fails on this machine, please install
+    dn01: the guest additions and repackage the box to continue.
+    dn01:
+    dn01: This is not an error message; everything may continue to work properly
+,
+    dn01: in which case you may ignore this message.
+==> dn01: Setting hostname...
+==> dn01: Configuring and enabling network interfaces...
+    dn01: SSH address: 127.0.0.1:2222
+    dn01: SSH username: vagrant
+    dn01: SSH auth method: private key
+==> dn01: Rsyncing folder: /cygdrive/c/Users/user/vagrant/hadoop/ => /vagrant
+==> dn01: Machine already provisioned. Run `vagrant provision` or use the `--pro
+vision`
+==> dn01: flag to force provisioning. Provisioners marked to run always will sti
+ll run.
+==> dn02: Clearing any previously set forwarded ports...
+==> dn02: Fixed port collision for 22 => 2222. Now on port 2200.
+==> dn02: Clearing any previously set network interfaces...
+==> dn02: Preparing network interfaces based on configuration...
+    dn02: Adapter 1: nat
+    dn02: Adapter 2: hostonly
+==> dn02: Forwarding ports...
+    dn02: 22 (guest) => 2200 (host) (adapter 1)
+==> dn02: Running 'pre-boot' VM customizations...
+==> dn02: Booting VM...
+==> dn02: Waiting for machine to boot. This may take a few minutes...
+    dn02: SSH address: 127.0.0.1:2200
+    dn02: SSH username: vagrant
+    dn02: SSH auth method: private key
+==> dn02: Machine booted and ready!
+==> dn02: Checking for guest additions in VM...
+    dn02: No guest additions were detected on the base box for this VM! Guest
+    dn02: additions are required for forwarded ports, shared folders, host only
+    dn02: networking, and more. If SSH fails on this machine, please install
+    dn02: the guest additions and repackage the box to continue.
+    dn02:
+    dn02: This is not an error message; everything may continue to work properly
+,
+    dn02: in which case you may ignore this message.
+==> dn02: Setting hostname...
+==> dn02: Configuring and enabling network interfaces...
+    dn02: SSH address: 127.0.0.1:2200
+    dn02: SSH username: vagrant
+    dn02: SSH auth method: private key
+==> dn02: Rsyncing folder: /cygdrive/c/Users/user/vagrant/hadoop/ => /vagrant
+==> dn02: Machine already provisioned. Run `vagrant provision` or use the `--pro
+vision`
+==> dn02: flag to force provisioning. Provisioners marked to run always will sti
+ll run.
+==> nn01: Clearing any previously set forwarded ports...
+==> nn01: Fixed port collision for 22 => 2222. Now on port 2201.
+==> nn01: Clearing any previously set network interfaces...
+==> nn01: Preparing network interfaces based on configuration...
+    nn01: Adapter 1: nat
+    nn01: Adapter 2: hostonly
+==> nn01: Forwarding ports...
+    nn01: 22 (guest) => 2201 (host) (adapter 1)
+==> nn01: Running 'pre-boot' VM customizations...
+==> nn01: Booting VM...
+==> nn01: Waiting for machine to boot. This may take a few minutes...
+    nn01: SSH address: 127.0.0.1:2201
+    nn01: SSH username: vagrant
+    nn01: SSH auth method: private key
+==> nn01: Machine booted and ready!
+==> nn01: Checking for guest additions in VM...
+    nn01: No guest additions were detected on the base box for this VM! Guest
+    nn01: additions are required for forwarded ports, shared folders, host only
+    nn01: networking, and more. If SSH fails on this machine, please install
+    nn01: the guest additions and repackage the box to continue.
+    nn01:
+    nn01: This is not an error message; everything may continue to work properly
+,
+    nn01: in which case you may ignore this message.
+==> nn01: Setting hostname...
+==> nn01: Configuring and enabling network interfaces...
+    nn01: SSH address: 127.0.0.1:2201
+    nn01: SSH username: vagrant
+    nn01: SSH auth method: private key
+==> nn01: Rsyncing folder: /cygdrive/c/Users/user/vagrant/hadoop/ => /vagrant
+==> nn01: Machine already provisioned. Run `vagrant provision` or use the `--pro
+vision`
+==> nn01: flag to force provisioning. Provisioners marked to run always will sti
+ll run.
+
+C:\Users\user\vagrant\hadoop>
+~~~
