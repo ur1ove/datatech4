@@ -63,3 +63,17 @@ Total MapReduce CPU Time Spent: 3 seconds 330 msec
 OK
 Time taken: 24.977 seconds
 ~~~
+~~~
+hive> !hdfs dfs -ls -R /user/hive/warehouse/hivedemo.db/
+    > ;
+drwxrwxrwx   - root     supergroup          0 2018-04-01 19:28 /user/hive/warehouse/hivedemo.db/orders_no_partition
+drwxrwxrwx   - cloudera supergroup          0 2018-04-01 21:43 /user/hive/warehouse/hivedemo.db/page_views
+drwxrwxrwx   - cloudera supergroup          0 2018-04-01 21:43 /user/hive/warehouse/hivedemo.db/page_views/y=2012
+drwxrwxrwx   - cloudera supergroup          0 2018-04-01 21:43 /user/hive/warehouse/hivedemo.db/page_views/y=2012/m=06
+drwxrwxrwx   - cloudera supergroup          0 2018-04-01 21:43 /user/hive/warehouse/hivedemo.db/page_views/y=2012/m=06/d=13
+-rwxrwxrwx   1 cloudera supergroup     149325 2018-04-01 21:43 /user/hive/warehouse/hivedemo.db/page_views/y=2012/m=06/d=13/000000_0
+drwxrwxrwx   - cloudera supergroup          0 2018-04-01 21:43 /user/hive/warehouse/hivedemo.db/page_views/y=2013
+drwxrwxrwx   - cloudera supergroup          0 2018-04-01 21:43 /user/hive/warehouse/hivedemo.db/page_views/y=2013/m=07
+drwxrwxrwx   - cloudera supergroup          0 2018-04-01 21:43 /user/hive/warehouse/hivedemo.db/page_views/y=2013/m=07/d=11
+-rwxrwxrwx   1 cloudera supergroup     732440 2018-04-01 21:43 /user/hive/warehouse/hivedemo.db/page_views/y=2013/m=07/d=11/000000_0
+~~~
