@@ -13,3 +13,33 @@ dn02: starting nodemanager, logging to /opt/hadoop/2.8.3/logs/yarn-vagrant-nodem
 dn01: starting nodemanager, logging to /opt/hadoop/2.8.3/logs/yarn-vagrant-nodemanager-dn01.out
 [vagrant@nn01 ~]$ 
 ~~~
+[vagrant@nn01 ~]$ jps
+~~~
+3251 ResourceManager
+2902 NameNode
+3098 SecondaryNameNode
+3515 Jps
+~~~
+[vagrant@nn01 ~]$ ssh vagrant@dn01
+~~~
+Last login: Mon Apr  2 06:48:18 2018
+~~~
+[vagrant@dn01 ~]$ jps
+~~~
+2864 NodeManager
+3021 Jps
+~~~
+[vagrant@dn01 ~]$ exit
+~~~
+logout
+Connection to dn01 closed.
+~~~
+[vagrant@nn01 ~]$ ssh vagrant@dn02
+~~~
+Last login: Mon Apr  2 06:48:35 2018
+~~~
+[vagrant@dn02 ~]$ jps
+~~~
+3300 Jps
+3143 NodeManager
+~~~
