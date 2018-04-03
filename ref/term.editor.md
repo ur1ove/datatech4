@@ -5,7 +5,7 @@
 4) (유료) MobaXterm - https://mobaxterm.mobatek.net/download.html  
 5) (유료) Xshell - https://www.netsarang.co.kr/download/main.html  
   
-## 에디터 소프트웨어
+## 에디터 소프트웨어  
 1) (유료) Sublime Text - https://www.sublimetext.com/  
 2) Brackets - http://brackets.io/  
 3) ATOM - https://atom.io/  
