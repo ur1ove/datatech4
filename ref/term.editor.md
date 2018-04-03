@@ -1,4 +1,4 @@
-### 터미널 소프트웨어  
+## 터미널 소프트웨어  
 1) PuTTY - https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html  
 2) SuperPuTTY - https://github.com/jimradford/superputty/releases  
 3) Tera Term - https://osdn.net/projects/ttssh2/releases/  
