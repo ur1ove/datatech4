@@ -26,3 +26,21 @@ scala> unionRDD.count()
 ~~~
 res13: Long = 23
 ~~~
+scala> inputRDD.take(3).foreach(println)
+~~~
+# Apache Spark
+
+Spark is a fast and general cluster computing system for Big Data. It provides
+~~~
+scala> sparkRDD.take(3).foreach(println)
+~~~
+<http://spark.apache.org/>
+guide, on the [project web page](http://spark.apache.org/documentation.html).
+["Building Spark"](http://spark.apache.org/docs/latest/building-spark.html).
+~~~
+scala> apacheRDD.take(3).foreach(println)
+~~~
+<http://spark.apache.org/>
+guide, on the [project web page](http://spark.apache.org/documentation.html).
+Spark is built using [Apache Maven](http://maven.apache.org/).
+~~~
