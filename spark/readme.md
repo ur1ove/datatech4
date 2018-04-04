@@ -135,3 +135,19 @@ scala> data.top(2)
 ~~~
 res29: Array[Int] = Array(3, 3)
 ~~~
+scala> data.takeSample(false,1).take(1).foreach(println)
+~~~
+3
+~~~
+scala> data.reduce((x,y)=>x+y)
+~~~
+res31: Int = 9
+~~~
+scala> data.reduce(_+_)
+~~~
+res32: Int = 9
+~~~
+scala> data.aggregate((0,0))((x,y)=>(x._1+y,x._2+1),(x,y)=>(x._1+y._1,x._2+y._2))
+~~~
+res33: (Int, Int) = (9,4)
+~~~
