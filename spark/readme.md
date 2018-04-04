@@ -114,3 +114,24 @@ scala> rdd1.cartesian(rdd2).foreach(println)
 (milk,cola)
 (milk,coffee)
 ~~~
+scala> rdd1.sample(false,0.5).foreach(println)
+~~~
+coffee
+tea
+~~~
+scala> val data = sc.parallelize(List(1,2,3,3))
+~~~
+data: org.apache.spark.rdd.RDD[Int] = ParallelCollectionRDD[42] at parallelize at <console>:24
+~~~
+scala> data.collect()
+~~~
+res27: Array[Int] = Array(1, 2, 3, 3)
+~~~
+scala> data.countByValue()
+~~~
+res28: scala.collection.Map[Int,Long] = Map(1 -> 1, 2 -> 1, 3 -> 2)
+~~~
+scala> data.top(2)
+~~~
+res29: Array[Int] = Array(3, 3)
+~~~
