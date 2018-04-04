@@ -44,3 +44,23 @@ scala> apacheRDD.take(3).foreach(println)
 guide, on the [project web page](http://spark.apache.org/documentation.html).
 Spark is built using [Apache Maven](http://maven.apache.org/).
 ~~~
+scala> val input = sc.parallelize(List(1,2,3,4))
+~~~
+input: org.apache.spark.rdd.RDD[Int] = ParallelCollectionRDD[21] at parallelize at <console>:24
+~~~
+scala> val result = input.map(x=>x*x)
+~~~
+result: org.apache.spark.rdd.RDD[Int] = MapPartitionsRDD[22] at map at <console>:25
+~~~
+scala> println(result.collect().mkString(","))
+~~~
+1,4,9,16
+~~~
+scala> s"aa\tbb\tcc"
+~~~
+res18: String = aa      bb      cc
+~~~
+scala> List("aa", "bb", "cc").mkString("\t")
+~~~
+res19: String = aa      bb      cc
+~~~
