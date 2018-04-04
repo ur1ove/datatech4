@@ -64,3 +64,29 @@ scala> List("aa", "bb", "cc").mkString("\t")
 ~~~
 res19: String = aa      bb      cc
 ~~~
+scala> val lines = sc.parallelize(List("hello spark","hi"))
+~~~
+lines: org.apache.spark.rdd.RDD[String] = ParallelCollectionRDD[23] at parallelize at <console>:24
+~~~
+scala> val words = lines.flatMap(line=>line.split(" "))
+~~~
+words: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[24] at flatMap at <console>:25
+~~~
+scala> words.first()
+~~~
+res20: String = hello
+~~~
+scala> val rdd1 = sc.parallelize(List("coffee","coffee","tea","milk"))
+~~~
+rdd1: org.apache.spark.rdd.RDD[String] = ParallelCollectionRDD[25] at parallelize at <console>:24
+~~~
+scala> val rdd2 = sc.parallelize(List("coffee","cola","water"))
+~~~
+rdd2: org.apache.spark.rdd.RDD[String] = ParallelCollectionRDD[26] at parallelize at <console>:24
+~~~
+scala> rdd1.distinct().foreach(println)
+~~~
+tea
+coffee
+milk
+~~~
