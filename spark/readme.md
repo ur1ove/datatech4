@@ -90,3 +90,27 @@ tea
 coffee
 milk
 ~~~
+scala> rdd1.intersection(rdd2).foreach(println)
+~~~
+coffee
+~~~
+scala> rdd1.subtract(rdd2).foreach(println)
+~~~
+milk
+tea
+~~~
+scala> rdd1.cartesian(rdd2).foreach(println)
+~~~
+(coffee,cola)
+(coffee,coffee)
+(coffee,water)
+(coffee,coffee)
+(coffee,water)
+(coffee,cola)
+(tea,coffee)
+(tea,water)
+(tea,cola)
+(milk,water)
+(milk,cola)
+(milk,coffee)
+~~~
