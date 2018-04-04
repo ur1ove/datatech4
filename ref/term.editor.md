@@ -12,3 +12,7 @@
 4) (유료) 에디트플러스 - https://www.editplus.com/kr/  
 5) notepad++ = https://notepad-plus-plus.org/  
 6) Visual Studio Code - https://code.visualstudio.com/  
+  
+## IDE
+1) (유료) https://www.enthought.com/product/canopy/  
+2) 
