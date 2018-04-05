@@ -13,6 +13,10 @@
 5) notepad++ = https://notepad-plus-plus.org/  
 6) Visual Studio Code - https://code.visualstudio.com/  
   
-## IDE
+## IDE  
 1) (유료) https://www.enthought.com/product/canopy/  
-2) 
+2) (유료) PyCharm - https://www.jetbrains.com/pycharm/  
+2) (유료) IntelliJ IDEA - https://www.jetbrains.com/idea/  
+  
+## 배포  
+1) http://www.rejetto.com/hfs/  
