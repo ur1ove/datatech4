@@ -1,5 +1,7 @@
 ## CUDA Toolkit 9.1 Download  
   
+https://developer.nvidia.com/cuda-downloads  
+  
 Windows x86_64 7 exe(local)  
 Download Installers for Windows 7 x86_64  
 Base Installer - http://developer.download.nvidia.com/compute/cuda/9.1/secure/Prod/local_installers/cuda_9.1.85_windows.exe?Sdn8WV6szkq6hnwb9PLJQChBBAVDm4h-sO8XNo7ebL91sx7-Z6DILVqmYf-dTyqAH-i20Fb0Prl-4Aj2K2pytT1X3M1VCESPMF1sonI8kLRQDmqdqP3aXjOJmGhbxAzyXq3N3fW9YfLb7jsJvMJlR9rACD67hHriMCNa9ICYSUWBm_xb  
