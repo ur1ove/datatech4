@@ -27,3 +27,6 @@ Host nn01
 Host dn01
   StrictHostkeyChecking nop
   UseKnownHostsFile /dev/null
+
+Data Node에는 LVM, RAID, SAN, NAS 쓰지말 것(심한 I/O)
+Top of Rack switch
