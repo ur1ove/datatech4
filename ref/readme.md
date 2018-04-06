@@ -36,3 +36,6 @@ Hadoop - https://github.com/karthikj1/Hadoop-2.7.1-Windows-64-binaries/releases
 
 ###
 AWS - https://aws.amazon.com/ko/ec2/pricing/?p=ps  
+
+인증서 확인 - https://www.websecurity.symantec.com/support/ssl-checker  
+  
