@@ -9,5 +9,5 @@ KODB 빅데이터 기술전문가 15기 4조
 ### 파일럿 프로젝트 전 과정을 공유하고자 합니다.  
   
 1) 협업은 Slack을 중심으로  
-2) Google Scheduler, Github를 통해 운영함.  
+2) Google Calender, Github를 통해 운영함.  
   
