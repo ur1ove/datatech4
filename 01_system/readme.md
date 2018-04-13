@@ -16,3 +16,8 @@ logout
 Last login: Mon Apr  9 08:34:47 2018 from 192.168.1.31
 [eduuser@dn02 ~]$ 
 ~~~
+  
+## yum 리파지터리 변경  
+  
+## SSH 로그인 자동화  
+  
