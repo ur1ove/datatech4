@@ -1,6 +1,25 @@
 ## Elastic Stack  
   
-1) Elasticsearch 6.2.3 설치  
+1) JDK 1.8 설치  
+~~~
+[esadmin@dn01 node1]$ alternatives --list
+libnssckbi.so.x86_64    auto    /usr/lib64/pkcs11/p11-kit-trust.so
+mkisofs auto    /usr/bin/genisoimage
+ld      auto    /usr/bin/ld.bfd
+java    auto    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.51-2.4.5.5.el7.x86_64/jre/bin/java
+jre_openjdk     auto    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.51-2.4.5.5.el7.x86_64/jre
+jre_1.7.0       auto    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.51-2.4.5.5.el7.x86_64/jre
+jre_1.7.0_openjdk       auto    /usr/lib/jvm/jre-1.7.0-openjdk-1.7.0.51-2.4.5.5.el7.x86_64
+print   auto    /usr/bin/lpr.cups
+xinputrc        auto    /etc/X11/xinit/xinput.d/ibus.conf
+libjavaplugin.so.x86_64 auto    /usr/lib64/IcedTeaPlugin.so
+cifs-idmap-plugin       auto    /usr/lib64/cifs-utils/idmapwb.so
+mta     auto    /usr/sbin/sendmail.postfix
+cdrecord        auto    /usr/bin/wodim
+~~~
+1.8이상
+  
+2) Elasticsearch 6.2.3 설치  
 ~~~
 [esadmin@dn01 ~]$ wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.3.zip  
 --2018-04-14 09:47:26--  https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.3.zip
