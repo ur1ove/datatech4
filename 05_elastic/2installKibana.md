@@ -8,7 +8,9 @@ eduuser@210.114.91.91's password:
 Last login: Thu Apr 19 03:38:23 2018 from dn01
 [eduuser@dn02 ~]$ sudo adduser esadmin
 [eduuser@dn02 ~]$ sudo vi /etc/group
-
+......
+wheel:x:10:eduuser,cloudera,esadmin
+......
 [eduuser@dn02 ~]$ sudo passwd esadmin
 Changing password for user esadmin.
 New password: 
@@ -35,4 +37,18 @@ Saving to: ‘kibana-6.2.4-linux-x86_64.tar.gz’
 2018-04-19 03:41:11 (5.53 MB/s) - ‘kibana-6.2.4-linux-x86_64.tar.gz’ saved [85348919/85348919]
 
 [esadmin@dn02 ~]$ tar zxvf kibana-6.2.4-linux-x86_64.tar.gz 
+~~~
+3) 사본을 만들고 설정을 수정해줍니다.
+~~~
+[esadmin@dn02 ~]$ cp -R kibana-6.2.4-linux-x86_64 node1
+[esadmin@dn02 ~]$ cd node1/config/
+[esadmin@dn02 config]$ vi kibana.yml
+......
+elasticsearch.url: "http://dn01:9201"
+......
+~~~
+4) 고고씽 Kibana~~~ 
+~~~
+[esadmin@dn02 config]$ cd ..   
+[esadmin@dn02 node1]$ bin/kibana
 ~~~
