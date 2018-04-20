@@ -1,6 +1,6 @@
 2018.04.28_대시보드 구축+모델 구축  
-Kibana 기반 대시보드 작성 + 
-데이터 수집기(지속), RDBMS+HIVE+NoSQL DB 구축
+Kibana 기반 대시보드 작성 +   
+데이터 수집기(지속), RDBMS+HIVE+NoSQL DB 구축  
 스파크ML+Keras(or Tensorflow) 모델 구축  
   
 2018.04.21_초기 모델 구축-클라우데라 기반 클러스터 구축  
