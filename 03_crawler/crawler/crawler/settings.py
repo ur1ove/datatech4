@@ -66,7 +66,7 @@ DEFAULT_REQUEST_HEADERS = {
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
 #    'crawler.pipelines.CrawlerPipeline': 300,
-    'crawler.pipelines.FlumeHttpPipeline': 300,
+#    'crawler.pipelines.FlumeHttpPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -96,4 +96,6 @@ FEED_EXPORTERS = {
     'json': 'scrapy.exporters.JsonLinesItemExporter'
 }
 
-FLUME_URL = 'http://localhost:50000'
+FLUME_URL = 'http://dn01:50001'
+
+DOWNLOAD_DELAY = 2 # 2 seconds delay

@@ -9,6 +9,9 @@
   * python 3.6
   * Anaconda 5
   * [Scrapy](http://scrapy.org)  
+  * [Visual Sudio Code](https://code.visualstudio.com/)
+    * python extension  
+
 
 ### Conda 가상환경 
 ~~~
@@ -516,4 +519,19 @@ In [16]:%save -r woori 1-9999
 
 ```bash
 $ scrapy crawl caucayear --set FEED_URI=output_2013.json -s FEED_FORMAT=json --set YEAR=2013 --logfile scrapy.log
+```
+```bash
+$ scrapy crawl houseinfo -s FLUME_URL=http://dn01:50001 -s FEED_FORMAT=json --set START=2008-01-01 -s END=2018-04-22 --logfile /home/log/data3/houseinfo.log
+```
+
+### Logstash 실행
+
+```bash
+$ bin/Logstash -f /home/log/logstash/houseinfo_logstash.conf
+```
+
+
+### Flume Hadoop 디렉토리 확인
+```bash
+$ sudo -u flume hadoop fs -ls /flume/data3/
 ```

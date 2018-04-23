@@ -28,7 +28,7 @@ class FlumeHttpPipeline(object):
         pass
 
     def process_item(self, item, spider):
-        spider.log("process_item called..")
+        #spider.log("process_item called..")
         headers = {'Content-Type': 'application/json; charset=utf-8'}
         data = json.dumps([{
             "headers" : {},
