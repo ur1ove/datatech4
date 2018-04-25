@@ -162,13 +162,14 @@ class HouseinfoSpider(scrapy.Spider):
                     appraisedValue = tmp[0].replace('￦','').replace(',','') if len(tmp) > 0 else ''
                    
 
-                    tmp = td[3].xpath('.//font[@color="FD1414"]//text()').extract()[0] # 최저가
+                    tmp = td[3].xpath('.//font[@color="FD1414"]//text()').extract() # 최저가
                     minValue = tmp[0].replace('￦','').replace(',','') if len(tmp) > 0 else ''
 
                     tmpstr = ''.join(td[3].xpath('.//font[@color="000000"]//text()').extract())
                     tmp = re.findall('\w+:￦(\S+)\((\d+)%\)\w+\:(\d+)\S*',tmpstr)
                     saleValue, saleRate, saleCount = tmp[0] if len(tmp) > 0 else ('','','') # [('215,688,000', '94', '5')]
-
+                    saleValue = saleValue.replace(',','')
+                    
                     land1 = land2 = floor1 = floor2 = pyeong = ''
                     infos = list(map(lambda x: re.sub('\[|\]','',x),td[3].xpath('.//font[@color="00479F"]//text()').extract())) 
                     self.logger.debug(infos)
