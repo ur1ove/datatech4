@@ -95,3 +95,19 @@ Starting cassandra (via systemctl):                        [  OK  ]
 [root@localhost yum.repos.d]# chkconfig cassandra on
 [root@localhost yum.repos.d]#
 ~~~
+  
+~~~
+[root@localhost cassandra]# nodetool status
+Datacenter: datacenter1
+=======================
+Status=Up/Down
+|/ State=Normal/Leaving/Joining/Moving
+--  Address    Load       Tokens       Owns (effective)  Host ID                               Rack
+UN  127.0.0.1  103.69 KiB  256          100.0%            f6abf98d-9c31-43ec-8447-6c7e8920bb88  rack1
+
+[root@localhost cassandra]# cqlsh localhost
+Connected to Test Cluster at localhost:9042.
+[cqlsh 5.0.1 | Cassandra 3.11.2 | CQL spec 3.4.4 | Native protocol v4]
+Use HELP for help.
+cqlsh>
+~~~
