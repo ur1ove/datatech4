@@ -109,5 +109,33 @@ UN  127.0.0.1  103.69 KiB  256          100.0%            f6abf98d-9c31-43ec-844
 Connected to Test Cluster at localhost:9042.
 [cqlsh 5.0.1 | Cassandra 3.11.2 | CQL spec 3.4.4 | Native protocol v4]
 Use HELP for help.
+cqlsh> help
+
+Documented shell commands:
+===========================
+CAPTURE  CLS          COPY  DESCRIBE  EXPAND  LOGIN   SERIAL  SOURCE   UNICODE
+CLEAR    CONSISTENCY  DESC  EXIT      HELP    PAGING  SHOW    TRACING
+
+CQL help topics:
+================
+AGGREGATES               CREATE_KEYSPACE           DROP_TRIGGER      TEXT
+ALTER_KEYSPACE           CREATE_MATERIALIZED_VIEW  DROP_TYPE         TIME
+ALTER_MATERIALIZED_VIEW  CREATE_ROLE               DROP_USER         TIMESTAMP
+ALTER_TABLE              CREATE_TABLE              FUNCTIONS         TRUNCATE
+ALTER_TYPE               CREATE_TRIGGER            GRANT             TYPES
+ALTER_USER               CREATE_TYPE               INSERT            UPDATE
+APPLY                    CREATE_USER               INSERT_JSON       USE
+ASCII                    DATE                      INT               UUID
+BATCH                    DELETE                    JSON
+BEGIN                    DROP_AGGREGATE            KEYWORDS
+BLOB                     DROP_COLUMNFAMILY         LIST_PERMISSIONS
+BOOLEAN                  DROP_FUNCTION             LIST_ROLES
+COUNTER                  DROP_INDEX                LIST_USERS
+CREATE_AGGREGATE         DROP_KEYSPACE             PERMISSIONS
+CREATE_COLUMNFAMILY      DROP_MATERIALIZED_VIEW    REVOKE
+CREATE_FUNCTION          DROP_ROLE                 SELECT
+CREATE_INDEX             DROP_TABLE                SELECT_JSON
+
 cqlsh>
+
 ~~~
