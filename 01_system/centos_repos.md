@@ -1,3 +1,5 @@
+참고 : https://zetawiki.com/wiki/Yum_Daum_저장소_설정  
+  
   
 ~~~
 [root@localhost ~]# bzip2 /etc/yum.repos.d/CentOS-*.repo
