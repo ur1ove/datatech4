@@ -136,6 +136,20 @@ CREATE_COLUMNFAMILY      DROP_MATERIALIZED_VIEW    REVOKE
 CREATE_FUNCTION          DROP_ROLE                 SELECT
 CREATE_INDEX             DROP_TABLE                SELECT_JSON
 
-cqlsh>
+cqlsh> CREATE KEYSPACE IF NOT EXISTS demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1 };
+cqlsh> DESCRIBE KEYSPACES
 
+demo  system_schema  system_auth  system  system_distributed  system_traces
+
+cqlsh> USE demo ;
+cqlsh:demo> CREATE TABLE users ( id int PRIMARY KEY, email text, name text ) ;
+cqlsh:demo> INSERT INTO users ( id, email, name ) VALUES ( 1, 'naver@naver.com','Kim' ) ;
+cqlsh:demo> SELECT * FROM users ;
+
+ id | email           | name
+----+-----------------+------
+  1 | naver@naver.com |  Kim
+
+(1 rows)
+cqlsh:demo>
 ~~~
