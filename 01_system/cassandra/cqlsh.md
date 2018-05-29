@@ -84,3 +84,34 @@ cqlsh:demo> select * from emp ;
 (2 rows)
 cqlsh:demo>
 ~~~
+  
+~~~
+cqlsh:demo> Create TABLE  demo.test_table_set (name text PRIMARY KEY , data set<text>);  INSERT INTO  demo.test_table_set (name, data ) VALUES ( 'eom', {'1', '1', '1'} );
+cqlsh:demo> select * from demo.test_table_set ;
+
+ name | data
+------+-------
+  eom | {'1'}
+
+(1 rows)
+cqlsh:demo> Create TABLE  demo.test_table_list (name text PRIMARY KEY , data list<text>);
+cqlsh:demo> INSERT INTO demo.test_table_list (name, data ) VALUES ( 'eom', ['1', '1', '1']);
+cqlsh:demo> SELECT * FROM demo.test_table_list;
+
+ name | data
+------+-----------------
+  eom | ['1', '1', '1']
+
+(1 rows)
+cqlsh:demo> Create TABLE  demo.test_table_map (name text PRIMARY KEY , data map<int, text>);
+cqlsh:demo> INSERT INTO demo.test_table_map (name, data ) VALUES ( 'eom', {1:'sejin', 1:'sejin2', 2:'duron'});
+cqlsh:demo> SELECT * FROM demo.test_table_map;
+
+ name | data
+------+---------------------------
+  eom | {1: 'sejin2', 2: 'duron'}
+
+(1 rows)
+cqlsh:demo>
+
+~~~
