@@ -26,3 +26,27 @@ May 30 13:54:50 localhost.localdomain systemd[1]: Starting Redis persistent key-
 May 30 13:54:50 localhost.localdomain systemd[1]: Started Redis persistent key-val....
 Hint: Some lines were ellipsized, use -l to show in full.
 ~~~
+  
+~~~
+[root@localhost yum.repos.d]# redis-cli ping
+PONG
+[root@localhost yum.repos.d]# ss -nlp | grep redis
+tcp    LISTEN     0      128       *:6379                  *:*                   users:(("redis-server",pid=87431,fd=7))
+tcp    LISTEN     0      128      :::6379                 :::*                   users:(("redis-server",pid=87431,fd=6))
+~~~
+  
+~~~
+[root@localhost yum.repos.d]# redis-cli -h localhost
+localhost:6379> set data1 mydata1
+OK
+localhost:6379> set data2 mydata2
+OK
+localhost:6379> keys dat*
+1) "data1"
+2) "data2"
+~~~
+  
+~~~
+localhost:6379> get data1
+"mydata1"
+~~~
